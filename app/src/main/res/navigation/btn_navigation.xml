@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_menu"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/gallery"
+        android:name="com.aziz.buttomproject.fragment.gallery.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+
+        <action
+            android:id="@+id/action_galleryFragment_to_detailGalleryFragment2"
+            app:destination="@id/detailGalleryFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/prestasiFragment"
+        android:name="com.aziz.buttomproject.fragment.prestasi.PrestasiFragment"
+        android:label="fragment_prestasi"
+        tools:layout="@layout/fragment_prestasi" >
+        <action
+            android:id="@+id/action_prestasiFragment_to_detailPrestasiFragment"
+            app:destination="@id/detailPrestasiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home"
+        android:name="com.aziz.buttomproject.fragment.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_galleryFragment"
+            app:destination="@id/gallery" />
+        <action
+            android:id="@+id/action_homeFragment_to_prestasiFragment"
+            app:destination="@id/prestasiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailHomeFragment"
+            app:destination="@id/detailHomeFragment" />
+        <action
+            android:id="@+id/action_home_to_gallery"
+            app:destination="@id/gallery" />
+        <action
+            android:id="@+id/action_home_to_founderFragment"
+            app:destination="@id/founder" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailHomeFragment"
+        android:name="com.aziz.buttomproject.fragment.home.DetailHomeFragment"
+        android:label="fragment_detail_home"
+        tools:layout="@layout/fragment_detail_home" >
+        <argument
+            android:name="detailNamaHome"
+            app:argType="string"
+            android:defaultValue="detail" />
+        <argument
+            android:name="detailDeskHome"
+            app:argType="string"
+            android:defaultValue="detailDeskGallery" />
+        <argument
+            android:name="detailGambarHome"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_detailHomeFragment_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPrestasiFragment"
+        android:name="com.aziz.buttomproject.fragment.prestasi.DetailPrestasiFragment"
+        android:label="fragment_detail_prestasi"
+        tools:layout="@layout/fragment_detail_prestasi" >
+        <argument
+            android:name="detailNamaPrestasi"
+            app:argType="string"
+            android:defaultValue="detail" />
+        <argument
+            android:name="detailDeskPrestasi"
+            app:argType="string"
+            android:defaultValue="detailDeskGallery" />
+        <argument
+            android:name="detailGambarPrestasi"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_detailPrestasiFragment_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.aziz.buttomproject.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+    <fragment
+        android:id="@+id/detailGalleryFragment2"
+        android:name="com.aziz.buttomproject.fragment.gallery.DetailGalleryFragment"
+        android:label="fragment_detail_gallery"
+        tools:layout="@layout/fragment_detail_gallery" >
+        <argument
+            android:name="detailNamaGallery"
+            app:argType="string"
+            android:defaultValue="detail" />
+        <argument
+            android:name="detailDeskGallery"
+            app:argType="string"
+            android:defaultValue="detailDeskGallery" />
+        <argument
+            android:name="detailGambarGallery"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_detailGalleryFragment2_to_gallery"
+            app:destination="@id/gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/founder"
+        android:name="com.aziz.buttomproject.fragment.FounderFragment"
+        android:label="fragment_founder"
+        tools:layout="@layout/fragment_founder" />
+</navigation>

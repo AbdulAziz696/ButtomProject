@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ButtomProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+
+    <string name="home_name">SMPIT Imam Syafii</string>
+    <string name="home_desk">desk fasilitas sekolah</string>
+    <string-array name="data_nama_home">
+        <item>SD Fajar Ilahi</item>
+        <item>SMPIT Fajar Ilahi</item>
+        <item>SMAIT Fajar Ilahi</item>
+        <item>SMPIT AIS</item>
+        <item>SMAIT AIS</item>
+        <item>SMPIT Imam Syafii</item>
+        <item>SMAIT Imam Syafii</item>
+
+    </string-array>
+
+    <string-array name="desk_home">
+        <item>Pendidikan dasar dengan tujuan mencetak generasi rabbani yang bertaqwa dan berakhlaqul karimah serta mampu bersaing secara global.</item>
+        <item>Sekolah Menengah Pertama Islam Terpadu Fajar Ilahi (SMP IT Fajar Ilahi) merupakan sebuah jenjang pendidikan formal dari jenjang pendidikan sekolah dasar sebelumnya. Pendidikan di SMP IT Fajar Ilahi berdasarkan Manhaj As Salaf Ash Sholih dengan Perpaduan Kurikulum Nasional dengan Pembelajaran Diniyah, Bahasa Arab , Pembelajaran Tahfidz Al-Qur’an.</item>
+        <item>Menyiapkan Peserta Didik agar dapat melanjutkan ke jenjang berikutya dengan mengutamkan Taqwa dan Akhlaq sesuai Al-Quran dan sunnah</item>
+        <item>Sekolah Menengah Pertama Al-Kahfi Islamic School (SMP AIS) merupakan sebuah jenjang pendidikan formal dari jenjang pendidikan sekolah dasar sebelumnya. Pendidikan di SMP AIS berdasarkan Manhaj As Salaf Ash Sholih dengan Perpaduan Kurikulum Nasional dengan Pembelajaran Bahasa Arab, English, Pembelajaran Tahfiz Al-Qur’an</item>
+        <item>Sekolah Menengah Atas Al-Kahfi Islamic School (SMA AIS) merupakan sebuah jenjang pendidikan formal dari jenjang pendidikan sekolah menengah pertama (SMP) sebelumnya. Pendidikan di SMA AIS berdasarkan Manhaj As Salaf Ash Sholih dengan Perpaduan Kurikulum Nasional dengan Pembelajaran Bahasa Arab, English, Pembelajaran Tahfiz Al-Qur’an</item>
+        <item>Menyiapkan pribadi yang beriman, bertauhid, penghafal Quran, beraklak, cerdas, dan terampil yang siap berkompetisi didunia global</item>
+        <item>Menyiapkan lulusan yang beriman, bertauhid, huffazhul Quran, beraklak, cerdas, dan terampil yang siap berkompetisi didunia global</item>
+    </string-array>
+    <integer-array name="gambar_home">
+        <item>@drawable/sd_fajar_ilahi</item>
+        <item>@drawable/fajar_ilahi</item>
+        <item>@drawable/fajar_ilahi_sma</item>
+        <item>@drawable/ais_smp</item>
+        <item>@drawable/ais_sma</item>
+        <item>@drawable/imam_syafii_smp</item>
+        <item>@drawable/ppit_imamsyafii_sma</item>
+
+    </integer-array>
+</resources>
